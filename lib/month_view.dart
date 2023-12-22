@@ -30,7 +30,7 @@ class MonthView extends StatelessWidget {
   final TextStyle titleStyle;
 
   Color getDayNumberColor(DateTime date) {
-    Color color;
+    Color color = Colors.black;
     if (isCurrentDate(date)) {
       color = currentDateColor;
     } else if (highlightedDates != null &&
